@@ -1,0 +1,79 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía general */
+    background: url('../img/bg-Ecoapp.png') center; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrado horizontal */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2.message {
+    color: #6f7942; /* Color verde para el mensaje */
+    text-align: center; /* Alinear al centro */
+}
+
+.instructions {
+    text-align: center; /* Alinear al centro */
+    color: #555; /* Color gris suave */
+}
+
+.recycling-points {
+    margin-top: 20px; /* Espacio superior */
+}
+
+h3 {
+    color: #333; /* Color oscuro para el título */
+    border-bottom: 2px solid #787d62; /* Línea debajo del título */
+    padding-bottom: 10px; /* Espacio debajo del título */
+}
+
+ul {
+    list-style-type: none; /* Quitar estilo de lista */
+    padding: 0; /* Quitar padding */
+}
+
+.point-item {
+    background-color: #e7f4e4; /* Fondo suave para cada punto */
+    border: 1px solid #787d62; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado vertical entre puntos */
+}
+
+.back-button {
+    display: inline-block; /* Hacer que el enlace se comporte como un botón */
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #787d62; /* Color de fondo verde */
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.back-button:hover {
+    background-color: #6f7942; /* Color más oscuro al pasar el mouse */
+}
+/* Footer */
+footer {
+    background-color: #333335;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

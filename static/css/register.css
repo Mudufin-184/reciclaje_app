@@ -1,0 +1,109 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background: url('../img/bg-Ecoapp.png');
+    background-size: cover;
+}
+
+/* Encabezado */
+header {
+    background-color: #6f7942; /* Color verde */
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Estilos del formulario */
+.register-form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centra el formulario */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Etiquetas y entradas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre los campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Botón */
+button {
+    background-color: #787d62; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Ancho completo */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6f7942; /* Color verde más oscuro al pasar el mouse */
+}
+
+/* Botón de regreso */
+.back-button {
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    margin-left: 25%;
+    padding: 10px 20px;
+    color: white;
+    background-color: #787d62; /* Color verde */
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #6f7942; /* Color verde más oscuro al pasar el mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.back-button:active {
+    background-color: #306932; /* Color verde aún más oscuro al hacer clic */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+
+/* Footer */
+footer {
+    background-color: #333335;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 500px) {
+    .register-form {
+        padding: 15px; /* Menos padding en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte Semanal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reporte.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Reporte de Reciclaje Semanal</h1>
+    </header>
+
+    <main>
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Total Reciclaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in reporte %}
+                    <tr>
+                        <td>{{ item.nombre_curso }}</td>
+                        <td>{{ item.total_reciclaje }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <section class="back-link">
+            <a href="/home" class="btn-link">Regresar al panel principal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Reciclaje Escolar</p>
+    </footer>
+</body>
+</html>

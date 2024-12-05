@@ -1,0 +1,77 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/bg-Ecoapp.png') center;
+    background-size: cover;
+    color: #333;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff; /* Color verde */
+    background-color: #6f7942;
+    padding: 5px;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilos de cada tarjeta */
+.tarjeta {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 280px; /* Ancho ajustado */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de las tarjetas */
+.tarjeta-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+/* Estilos de los botones */
+.back-button {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #787d62; /* Color verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #6f7942; /* Color verde más oscuro */
+}
+
+/* Estilo del pie de página */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333335;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

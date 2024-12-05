@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/historial_reciclaje.css') }}">
+    <title>Historial de Reciclaje</title>
+</head>
+<body>
+    <header>
+        <h1>Historial de Reciclaje</h1>
+    </header>
+
+    <main>
+        <h2>Total de Reciclajes por Curso</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Total Reciclado</th>
+                        <th>Total No Reciclado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for curso in total_reciclajes %}
+                    <tr>
+                        <td>{{ curso.nombre_curso }}</td>
+                        <td>{{ curso.total_reciclaje }}</td>
+                        <td>{{ curso.total_no_reciclaje }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Historial de Reciclaje</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Fecha</th>
+                    <th>Reciclado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registro in historial %}
+                <tr>
+                    <td>{{ registro.nombre_curso }}</td>
+                    <td>{{ registro.fecha }}</td>
+                    <td>{{ 'Sí' if registro.reciclo else 'No' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ url_for('home') }}">Volver a Inicio</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Reciclaje Escolar</p>
+    </footer>
+</body>
+</html>

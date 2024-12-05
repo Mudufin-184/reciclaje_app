@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Correcto de las Canecas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/tarjetas.css') }}">
+</head>
+<body>
+    <h2>Uso Correcto de las Canecas</h2>
+    <div class="tarjetas-container">
+        <div class="tarjeta">
+            <img src="{{ url_for('static', filename='img/caneca-blanca.jpg') }}" alt="Caneca Blanca" class="tarjeta-img">
+            <h3>Caneca Blanca</h3>
+            <p>Utilízala para reciclar papel y cartón. Asegúrate de que estén limpios y secos.</p>
+        </div>
+        <div class="tarjeta">
+            <img src="{{ url_for('static', filename='img/caneca-negra.jpg') }}" alt="Caneca Negra" class="tarjeta-img">
+            <h3>Caneca Negra</h3>
+            <p>Esta es para residuos orgánicos. Evita poner plásticos o papel.</p>
+        </div>
+        <div class="tarjeta">
+            <img src="{{ url_for('static', filename='img/caneca-verde.jpg') }}" alt="Caneca Verde" class="tarjeta-img">
+            <h3>Caneca Verde</h3>
+            <p>Utilízala para reciclar vidrio. Asegúrate de que las botellas estén vacías y limpias.</p>
+        </div>
+    </div>
+
+    <a class="back-button" href="/home">Regresar al panel principal</a>
+
+    <footer class="footer">
+        <p>&copy; 2024 Plataforma de Reciclaje Escolar</p>
+    </footer>
+</body>
+</html>

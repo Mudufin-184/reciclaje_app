@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Panel Principal de Eco App</h1>
+    </header>
+
+    <main>
+        <h2>Bienvenido, {{ usuario.nombre }}, a Eco App</h2>
+        <section class="form-container">
+            <form action="/recycling" method="POST">
+                <label for="curso">Seleccione el curso:</label>
+                <select name="curso" required>
+                    {% for curso in cursos %}
+                    <option value="{{ curso.id_curso }}">{{ curso.nombre_curso }}</option>
+                    {% endfor %}
+                </select>
+                
+                <label for="reciclo">¿Recicló hoy?</label>
+                <select name="reciclo">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <button type="submit">Registrar Reciclaje</button>
+            </form>
+        </section>
+        
+        <section class="links">
+            <a href="/report" class="btn-link">Ver reporte semanal</a>
+            <a href="/reminder" class="btn-link">Ver puntos de reciclaje</a>
+            <a href="/tarjetas" class="btn-link">Uso de Canecas</a>
+            <a href="/historial_reciclaje" class="btn-link">Historial de reciclaje</a>
+            <a href="/login" class="btn-link">Cerrar Sesión</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Reciclaje Escolar</p>
+    </footer>
+</body>
+</html>

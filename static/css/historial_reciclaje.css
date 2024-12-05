@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../img/bg-Ecoapp.png') center;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    background-color: #6f7942; /* Color de fondo del h1 */
+    color: white; /* Color del texto del h1 */
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    margin: 0 auto; /* Centrar el h1 */
+}
+
+/* Títulos */
+h2 {
+    background-color: #787d62; /* Color de fondo del h2 */
+    color: white; /* Color del texto del h2 */
+    text-align: center;
+    margin: 2rem auto; /* Centrar el h2 y separar del contenido */
+    padding: 1rem; /* Espaciado interno para el h2 */
+    max-width: 800px; /* Ancho máximo del h2 */
+    border-radius: 8px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Centramos la tabla */
+    max-width: 800px; /* Ancho máximo de la tabla */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #787d62; /* Color de fondo de los encabezados */
+    color: white; /* Color del texto de los encabezados */
+    font-weight: bold;
+}
+
+/* Hover en las filas de la tabla */
+tr:hover {
+    background-color: #f4f4f4; /* Color de fondo al pasar el mouse sobre las filas */
+}
+
+/* Enlace de regreso */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 0.7rem 1.5rem;
+    background-color: #787d62;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #6f7942;
+}
+
+/* Footer */
+footer {
+    background-color: #333335;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Diseño Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Tamaño de fuente del h1 en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Tamaño de fuente del h2 en pantallas pequeñas */
+        margin: 1.5rem auto; /* Ajusta el margen en pantallas pequeñas */
+    }
+
+    table, th, td {
+        padding: 8px; /* Reduce el padding en las celdas en pantallas pequeñas */
+    }
+
+    a {
+        padding: 0.5rem 1rem; /* Ajusta el padding del enlace en pantallas pequeñas */
+    }
+}
